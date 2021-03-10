@@ -178,10 +178,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 
-# IFAAService
-PRODUCT_PACKAGES += \
-    IFAAService
-
 # Input
 PRODUCT_PACKAGES += \
     sm8150-tavil-snd-card_Button_Jack.kl \
