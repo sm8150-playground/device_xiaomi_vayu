@@ -262,7 +262,7 @@ sys.vendor.shutdown.waittime=500
 
 # Fingerprint
 persist.vendor.fingerprint.type=side
-persist.vendor.fingerprint.sensor_location=1080|945|150|local:4630946480857061761
+persist.vendor.fingerprint.sensor_location=1080|945|150|local:4630946480857061761,1080|945|150|local:4630946545580055169
 
 # USB
 vendor.usb.diag.func.name=diag
