@@ -15,6 +15,10 @@
      limitations under the License.
 -->
 <resources>
+
+     <!-- Xiaomiparts label -->
+     <string name="xiaomiparts_label_name">Xiaomi Parts</string>
+
     <!-- Thermal Profiles -->
     <string name="thermal_title">Thermal Profiles</string>
     <string name="thermal_summary">Adjust per-app thermal profiles for optimum performance</string>
