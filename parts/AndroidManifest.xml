@@ -29,7 +29,7 @@
 
     <application
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/device_settings_app_name"
+        android:label="@string/xiaomiparts_label_name"
         android:persistent="true"
         android:theme="@style/Theme.SubSettingsBase">
 
@@ -85,7 +85,7 @@
 
         <activity
             android:name=".TileEntryActivity"
-            android:label="@string/device_settings_app_name"
+            android:label="@string/xiaomiparts_label_name"
             android:exported="false"
             android:theme="@style/Theme.SubSettingsBase">
             <intent-filter>
