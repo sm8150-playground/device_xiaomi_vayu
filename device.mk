@@ -4,7 +4,11 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
+# FM
 TARGET_HAS_FM := true
+
+# Device isn't launched in china
+TARGET_NOT_IN_CHINA := true
 
 # Inherit from sm8150-common
 $(call inherit-product, device/xiaomi/sm8150-common/msmnile.mk)
