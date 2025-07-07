@@ -89,6 +89,7 @@ vendor.audio.use.sw.alac.decoder=true
 vendor.audio.use.sw.ape.decoder=true
 vendor.audio.volume.headset.gain.depcal=true
 vendor.voice.path.for.pcm.voip=false
+ro.hardware.audio.primary=vayu
 
 # Bluetooth
 bluetooth.device.class_of_device=90,2,12
@@ -158,6 +159,10 @@ ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.surface_flinger.use_content_detection_for_refresh_rate=true
+ro.surface_flinger.set_display_power_timer_ms=1000
+ro.surface_flinger.set_idle_timer_ms=80
+ro.surface_flinger.set_touch_timer_ms=200
 ro.vendor.display.ad=1
 ro.vendor.display.ad.sdr_calib_data=/vendor/etc/sdr_config.cfg
 ro.vendor.display.ad.hdr_calib_data=/vendor/etc/hdr_config.cfg
@@ -224,6 +229,31 @@ ro.vendor.extension_library=libqti-perfd-client.so
 # Qualcomm System Daemon
 persist.vendor.qcomsysd.enabled=1
 
+# Radio
+persist.data.df.iwlan_mux=9
+persist.radio.dynamic_sar=false
+persist.radio.multisim.config=dsds
+persist.radio.NO_STAPA=1
+persist.radio.VT_HYBRID_ENABLE=1
+persist.rcs.otp_sms_port=0
+persist.rcs.supported=1
+persist.vendor.data.iwlan.enable=true
+persist.vendor.radio.apm_sim_not_pwdn=1
+persist.vendor.radio.custom_ecc=1
+persist.vendor.radio.data_con_rprt=1
+persist.vendor.radio.data_ltd_sys_ind=1
+persist.vendor.radio.enableadvancedscan=true
+persist.vendor.radio.force_ltd_sys_ind=1
+persist.vendor.radio.force_on_dc=true
+persist.vendor.radio.manual_nw_rej_ct=1
+persist.vendor.radio.procedure_bytes=SKIP
+persist.vendor.radio.rat_on=combine
+persist.vendor.radio.sar_sar_sensor=true
+persist.vendor.radio.sib16_support=1
+persist.vendor.radio.usblockant=true
+ro.com.android.dataroaming=false
+ro.telephony.default_network=33,22
+
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
 
@@ -239,6 +269,7 @@ vendor.usb.rmnet.inst.name=rmnet
 vendor.usb.rndis.func.name=gsi
 vendor.usb.use_ffs_mtp=0
 vendor.usb.use_gadget_hal=0
+vendor.usb.product_string=Poco X3 Pro
 
 # WFD
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true

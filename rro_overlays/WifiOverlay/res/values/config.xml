@@ -26,6 +26,9 @@
 
     <!-- Boolean indicating whether the wifi chipset has background scan support -->
     <bool name="config_wifi_background_scan_support">true</bool>
+  
+    <!-- Do not translate. Default access point SSID used for tethering -->
+    <string name="wifi_tether_configure_ssid_default" translatable="false">Poco X3 Pro</string>
 
     <!-- Wifi driver supports batched scan -->
     <bool name="config_wifi_batched_scan_supported">true</bool>
