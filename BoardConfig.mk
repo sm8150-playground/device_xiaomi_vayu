@@ -167,10 +167,10 @@ DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
     hardware/xiaomi/vintf/xiaomi_framework_compatibility_matrix.xml \
     vendor/lineage/config/device_framework_matrix.xml
-DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/manifest.xml
+DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/configs/vintf/manifest.xml
 DEVICE_MATRIX_FILE += hardware/qcom-caf/common/compatibility_matrix.xml
 ODM_MANIFEST_SKUS += nfc
-ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/manifest_nfc.xml
+ODM_MANIFEST_NFC_FILES := $(DEVICE_PATH)/configs/vintf/manifest_nfc.xml
 
 # Wi-Fi
 BOARD_WLAN_DEVICE := qcwcn
