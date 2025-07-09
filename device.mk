@@ -228,8 +228,7 @@ PRODUCT_PACKAGES += \
     ApertureOverlayVayu \
     CarrierConfigOverlayVayu \
     FrameworkResOverlayVayu \
-    LineageDialerOverlayVayu \
-    LineageSDKOverlayVayu \
+    YAAPSettingsOverlayDevice \
     SettingsOverlayVayu \
     SettingsProviderOverlayVayu \
     SystemUIOverlayVayu \
@@ -237,6 +236,9 @@ PRODUCT_PACKAGES += \
     WifiResourcesOverlayVayu
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
+
+# Platform
+TARGET_BOARD_PLATFORM := msmnile
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -247,6 +249,8 @@ PRODUCT_PACKAGES += \
     vendor_firmware_mnt_mountpoint
 
 # Power
+TARGET_PROVIDES_POWERHAL := true
+
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
     libqti-perfd-client
@@ -313,17 +317,9 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # Telephony
 PRODUCT_PACKAGES += \
-    ims-ext-common \
-    ims_ext_common.xml \
-    qti-telephony-hidl-wrapper \
-    qti_telephony_hidl_wrapper.xml \
-    qti-telephony-utils \
-    qti_telephony_utils.xml \
-    telephony-ext \
     xiaomi-telephony-stub
 
 PRODUCT_BOOT_JARS += \
-    telephony-ext \
     xiaomi-telephony-stub
 
 # UFFD GC
