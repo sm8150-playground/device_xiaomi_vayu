@@ -1,5 +1,4 @@
 # All unpinned blobs below are extracted from nabu_globalin-user 13 RKQ1.200826.002 V816.0.18.0.TKXINXM release-keys
-# kebab: KB2001 14.0.0.81(EX01)
 # vayu: vayu_global-user 13 RKQ1.200826.002 V14.0.3.0.TJUMIXM release-keys
 
 # ACDB
@@ -71,12 +70,12 @@ vendor/lib/libadiertac.so
 vendor/lib/libaudcal.so
 
 # Audio effects
+vendor/lib/libqtigef.so
 vendor/lib/soundfx/libasphere.so
 vendor/lib/soundfx/libqcbassboost.so
 vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 vendor/lib/soundfx/libshoebox.so
-vendor/lib/libqtigef.so
 
 # Audio firmware - from vayu
 vendor/firmware/tas256x_reg.bin|de262d6c3c388ae0c94b6a767bbcd38f07e3a401
@@ -84,7 +83,6 @@ vendor/firmware/tas256x_reg.bin|de262d6c3c388ae0c94b6a767bbcd38f07e3a401
 # Audio hardware - from vayu
 vendor/lib/hw/audio.primary.msmnile.so:vendor/lib/hw/audio.primary.vayu.so;FIX_SONAME|736764a2dd727701e81a145ab77e00d60dbaaeb8|1ba1c82aca53f6e3f45fe184d085b5ede8f2a0b0
 vendor/lib/hw/vendor.qti.hardware.audiohalext@1.0-impl.so|78c3d718fa0d7b15bb7a61adeb737e39e2b793e0
-vendor/lib/vndk/libxlog.so|bdb3d8d8b37bd4e1e84f59d912457690e7388f2e
 vendor/lib/liba2dpoffload.so:vendor/lib/liba2dpoffload_vayu.so;FIX_SONAME|d806efe4fccc1022f34c3171b63a8333118289c6|eaf61aafdabc78cf2bf47840e740423de8ddf910
 vendor/lib/libadm.so|c5d8693dbec640d3366ad7620833b2e4387f3c01
 vendor/lib/libaudio_log_utils.so|71ec4d31ad6c9e9a4bee8db7b5ab55b70ef7c4c3
@@ -97,27 +95,52 @@ vendor/lib/libresampler.so|8edd3e46d46ad53469487f172219aec3a5a840b5
 vendor/lib/libssrec.so|076f538577c1873c114b2858fd28e04cc09ce723
 vendor/lib/libsurround_3mic_proc.so|1d425b4b0d89f68e0f0112e8f2f73b1cd5b6dea2
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so|188bfa1f6971a76651e585805698390638e35b4b
+vendor/lib/vndk/libxlog.so|bdb3d8d8b37bd4e1e84f59d912457690e7388f2e
 
 # Bluetooth
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/libbtnv.so
 
-# Bluetooth - from vayu
-vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|323c931eb367ed303d71f435c407cfcbc96d079c
-vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|547e4359452c56d93d27d5c450aa120678f994e7
-
 # Bluetooth (A2DP)
-vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/btaudio_offload_if.so
+vendor/lib/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib/libbluetooth_audio_session_qti.so
+vendor/lib64/btaudio_offload_if.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_audio@2.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.bluetooth_sar@1.1-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
-vendor/lib64/btaudio_offload_if.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
+
+# Bluetooth - from vayu
+vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti|323c931eb367ed303d71f435c407cfcbc96d079c
+vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so|547e4359452c56d93d27d5c450aa120678f994e7
+
+# Camera (arcsoft) - from vayu
+vendor/lib64/libarcsoft_beautyshot.so|1faae34b96337876f94503a1048f4ce408219dec
+vendor/lib64/libarcsoft_bodyslim.so|d69e70800b1a809425efcde6ee1d3ea3f825ac5c
+vendor/lib64/libarcsoft_distortion_correction.so|86a6cf76276688aa5b658fd4c9721db84376e355
+vendor/lib64/libarcsoft_dualcam_refocus_image.so|d33539c2f1f3a859c8a01c4f8d04974a87869df4
+vendor/lib64/libarcsoft_dualcam_refocus_video.so|68d77781025de3bb5ffd9ae263aceba4e21dfc32
+vendor/lib64/libarcsoft_hdr_detection.so|666bff940d4fe6b0e930397e88cffb4a1726ff16
+vendor/lib64/libarcsoft_high_dynamic_range.so|9ccf7015444f6e8adb6999dc3cddfa5185859de9
+vendor/lib64/libarcsoft_high_dynamic_range_v5.so|f17f46abda15e2e99883269af051522d1d2056ea
+vendor/lib64/libarcsoft_low_light_hdr.so|750e1157377397fa1d94fcfb6ac1dfdf4f5fed3d
+vendor/lib64/libarcsoft_portrait_lighting.so|1bc7b14fe69e617529e4dda74e4ef1081ea2ada0
+vendor/lib64/libarcsoft_portrait_lighting_c.so|ca42fa6fc25e231ca70e1caf80a08b18ccfd3d99
+vendor/lib64/libarcsoft_preview_deflicker.so|6f1da5473c0b79e99da1d2ea27db736f06931774
+vendor/lib64/libarcsoft_supernight.so|1ddb832870a9db8bb99a0b2d9eb968565f2ee83f
+
+# Camera (CamX) - from vayu
+vendor/lib64/libcamxfdalgov7.so|aa3cf08b7c8fa862417d332c2b8012218188b962
+vendor/lib64/libcamxfdalgov8.so|c5b7401df0879170b30f81df70f51c943f983213
+vendor/lib64/libcamxfdengine.so|2d16bb62c932f9ee97957827e97cf095330c4f1d
+vendor/lib64/libcamxlocalhistogramalgo.so|962651395daf8acf9aa1ae66ce35061e372ffc3f
+vendor/lib64/libcamxstatscore.so|7cc680ed0e9ded7747b7d0a10bcb2e940f6126aa
+vendor/lib64/libcamxswprocessalgo.so|f6031f6b1b96c0b445822a45f7619824910519d0
+vendor/lib64/libcamxtintlessalgo.so|77d0ce8392160aca80345d3978b382798591207c
 
 # Camera - from vayu
 vendor/lib64/camera/com.qti.sensor.hi259_vayu.so|5ffe301e912097485e9b53c4086a36cc0b5384b5
@@ -206,32 +229,7 @@ vendor/lib64/libvideoBokeh.so|a622403c85c32c6500c1fc625fb23cae5b4af490
 vendor/lib64/libvideofilter_only.so|a79f90fd9b3105744790412b72f314f804707fbe
 vendor/lib64/libvidhance.so|bbfb1baeccaf6ec6baa026f096d06c454832a84e
 
-# Camera (arcsoft) - from vayu
-vendor/lib64/libarcsoft_beautyshot.so|1faae34b96337876f94503a1048f4ce408219dec
-vendor/lib64/libarcsoft_bodyslim.so|d69e70800b1a809425efcde6ee1d3ea3f825ac5c
-vendor/lib64/libarcsoft_distortion_correction.so|86a6cf76276688aa5b658fd4c9721db84376e355
-vendor/lib64/libarcsoft_dualcam_refocus_image.so|d33539c2f1f3a859c8a01c4f8d04974a87869df4
-vendor/lib64/libarcsoft_dualcam_refocus_video.so|68d77781025de3bb5ffd9ae263aceba4e21dfc32
-vendor/lib64/libarcsoft_hdr_detection.so|666bff940d4fe6b0e930397e88cffb4a1726ff16
-vendor/lib64/libarcsoft_high_dynamic_range.so|9ccf7015444f6e8adb6999dc3cddfa5185859de9
-vendor/lib64/libarcsoft_high_dynamic_range_v5.so|f17f46abda15e2e99883269af051522d1d2056ea
-vendor/lib64/libarcsoft_low_light_hdr.so|750e1157377397fa1d94fcfb6ac1dfdf4f5fed3d
-vendor/lib64/libarcsoft_portrait_lighting.so|1bc7b14fe69e617529e4dda74e4ef1081ea2ada0
-vendor/lib64/libarcsoft_portrait_lighting_c.so|ca42fa6fc25e231ca70e1caf80a08b18ccfd3d99
-vendor/lib64/libarcsoft_preview_deflicker.so|6f1da5473c0b79e99da1d2ea27db736f06931774
-vendor/lib64/libarcsoft_supernight.so|1ddb832870a9db8bb99a0b2d9eb968565f2ee83f
-
-# Camera (CamX) - from vayu
-vendor/lib64/libcamxfdalgov7.so|aa3cf08b7c8fa862417d332c2b8012218188b962
-vendor/lib64/libcamxfdalgov8.so|c5b7401df0879170b30f81df70f51c943f983213
-vendor/lib64/libcamxfdengine.so|2d16bb62c932f9ee97957827e97cf095330c4f1d
-vendor/lib64/libcamxlocalhistogramalgo.so|962651395daf8acf9aa1ae66ce35061e372ffc3f
-vendor/lib64/libcamxstatscore.so|7cc680ed0e9ded7747b7d0a10bcb2e940f6126aa
-vendor/lib64/libcamxswprocessalgo.so|f6031f6b1b96c0b445822a45f7619824910519d0
-vendor/lib64/libcamxtintlessalgo.so|77d0ce8392160aca80345d3978b382798591207c
-
 # Camera components - from vayu
-vendor/lib64/camera/components/etc/visidon_clearshot_params.xml|8041eed40eea41ad98576616a3edaf7da6ae097e
 vendor/lib64/camera/components/com.ailab.node.videofilter.so|896905ec3a7c932f502ca9db7daa2936626455c3
 vendor/lib64/camera/components/com.almalence.node.sr.so|96fd400a5f55dc3023276ca895b291625fa46762
 vendor/lib64/camera/components/com.altek.node.depurple.so|a87ee2c6ad7cb3581bfba899b1825a8695f9e1d2
@@ -293,6 +291,7 @@ vendor/lib64/camera/components/com.visidon.node.clearshot.so|4895705f4ce2b980cb6
 vendor/lib64/camera/components/com.xiaomi.node.mibokeh.so|6d29911c997c36e767c934240fd465fc2237219f
 vendor/lib64/camera/components/com.xiaomi.node.mifragment.so|d5c63c8534dc9fe6027a51a76ef10e87e9becb76
 vendor/lib64/camera/components/com.xiaomi.node.misegment.so|f2dc18f21b8d610752f1865d1cf8262553dd4826
+vendor/lib64/camera/components/etc/visidon_clearshot_params.xml|8041eed40eea41ad98576616a3edaf7da6ae097e
 vendor/lib64/camera/components/libdepthmapwrapper.so|64ddc83b5c962de8f8058760dfeb12afb053e1f8
 
 # Camera configs - from vayu
@@ -365,6 +364,8 @@ vendor/etc/init/init.batterysecret.rc|9abbe6fd82a0bd5b4499bfe141a5645e76e57606|b
 # CNE
 vendor/app/CneApp/CneApp.apk;REQUIRED=CneApp.libvndfwk_detect_jni.qti_vendor_symlink
 vendor/bin/cnd
+vendor/etc/cne/profileSlm.xml
+vendor/etc/cne/slm.conf
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml
 vendor/etc/cne/wqeclient/ATT/ATT_profile3.xml
@@ -392,8 +393,6 @@ vendor/etc/cne/wqeclient/VZW/VZW_profile3.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile4.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile5.xml
 vendor/etc/cne/wqeclient/VZW/VZW_profile6.xml
-vendor/etc/cne/profileSlm.xml
-vendor/etc/cne/slm.conf
 vendor/etc/default-permissions/com.qualcomm.qti.cne.xml
 vendor/etc/init/cnd.rc
 vendor/lib64/libcne.so
@@ -481,9 +480,9 @@ vendor/lib64/libdpmqmihal.so
 # DRM
 vendor/bin/hw/vendor.qti.hardware.qseecom@1.0-service
 vendor/bin/qseecomd
+vendor/etc/gpfspath_oem_config.xml
 vendor/etc/init/qseecomd.rc
 vendor/etc/init/vendor.qti.hardware.qseecom@1.0-service.rc
-vendor/etc/gpfspath_oem_config.xml
 vendor/lib64/hw/vendor.qti.hardware.qseecom@1.0-impl.so
 vendor/lib64/libGPreqcancel.so
 vendor/lib64/libGPreqcancel_svc.so
@@ -503,6 +502,13 @@ vendor/lib64/libssd.so
 vendor/lib64/libtzdrmgenprov.so
 vendor/lib64/vendor.qti.hardware.qseecom@1.0.so
 
+# Fingerprint - from vayu
+vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME|77ec9978709731a66a7c6355373a07bac24f1af6|da878f3d5af3fe50d1131710a7657c92bdbd0346
+vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME|e4fdad0122c939649baa0d80e4c4ea232b5f11c7|4726dd3f6fea4db6e06340e71b6ee40c77fa97c5
+vendor/lib64/libgf_ca.so|ee0da92b23d1875a04fd4b6c330000300375fe07
+vendor/lib64/libgf_hal.so|ab1dd038fe66f7be96f5153d5fa636026141e129
+vendor/lib64/libgoodixhwfingerprint.so|ecf0eac38435e53f014c9ccc11c4be92a3c5e0d1
+
 # FM
 vendor/lib/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
@@ -512,81 +518,14 @@ system_ext/lib64/fm_helium.so|623a78dfe8f73808158bc88116cd3204588aa126
 system_ext/lib64/libfm-hci.so|605591d98f2a98773209ae67f374e726f39eeda4
 system_ext/lib64/vendor.qti.hardware.fm@1.0.so|474a9399822c89409cd001095ad12eacfd079fba
 vendor/bin/fm_qsoc_patches|4f7c1f039ae131729409e59da24f93896bd33ba7
-vendor/etc/init/init.qti.fm.rc|4f5459058debbea76991e69f8522126f6655fd3b
 vendor/etc/init.qti.fm.sh|0ac820dd85ebdf5fa73b5e971f6787ff35ceb65d
+vendor/etc/init/init.qti.fm.rc|4f5459058debbea76991e69f8522126f6655fd3b
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so|e1745a71edc80fa9e9eab854ac42700b6e22af01
 
 # Gatekeeper
 vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
-
-# Graphics (Adreno)
-vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so
-vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so
-vendor/lib/egl/libq3dtools_esx.so
-vendor/lib/libC2D2.so
-vendor/lib/libCB.so
-vendor/lib/libOpenCL.so
-vendor/lib/libVkLayer_q3dtools.so
-vendor/lib/libadreno_app_profiles.so
-vendor/lib/libadreno_utils.so
-vendor/lib/libc2d30_bltlib.so
-vendor/lib/libgpudataproducer.so
-vendor/lib/libgsl.so
-vendor/lib/libllvm-glnext.so
-vendor/lib/libllvm-qcom.so
-vendor/lib64/egl/eglSubDriverAndroid.so
-vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
-vendor/lib64/egl/libGLESv1_CM_adreno.so
-vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so
-vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so
-vendor/lib64/egl/libq3dtools_esx.so
-vendor/lib64/libC2D2.so
-vendor/lib64/libCB.so
-vendor/lib64/libOpenCL.so
-vendor/lib64/libVkLayer_q3dtools.so
-vendor/lib64/libadreno_app_profiles.so
-vendor/lib64/libadreno_utils.so
-vendor/lib64/libc2d30_bltlib.so
-vendor/lib64/libgpudataproducer.so
-vendor/lib64/libgsl.so
-vendor/lib64/libllvm-glnext.so
-vendor/lib64/libllvm-qcom.so
-
-# Graphics (Vulkan)
-vendor/lib/hw/vulkan.adreno.so
-vendor/lib64/hw/vulkan.adreno.so
-
-# Graphics (Adreno firmware) - from vayu
-vendor/firmware/a612_rgmu.bin|cb8705d5bc417e53863ed16ab0bed2fc1489646f
-vendor/firmware/a618_gmu.bin|0c211ef8a3246d649a4ae52a926d128b61e3c264
-vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
-vendor/firmware/a630_sqe.fw|6526cbb24d614dd67dc18e3c80d5c4374a0b3f63
-vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
-vendor/firmware/a640_zap.b00|7afc31984d7eeacdd0fc78118ad8fa46c9b3e4ee
-vendor/firmware/a640_zap.b01|bd508a7b91d8fd61beac4ab5238de428abc49742
-vendor/firmware/a640_zap.b02|27d26ca0ae982c065fb7ab58be73bf3ca2e8bdf3
-vendor/firmware/a640_zap.elf|4d0bb927cf20c7bd3a3bdea18194cdda734eba98
-vendor/firmware/a640_zap.mdt|ab295025e138532073b5dda98a02b27c4fe4127f
-
-# IPA firmware - from vayu
-vendor/etc/init/ipa_fws.rc|f1826b81077f51470c97781823f109f12361ac8b
-vendor/firmware/ipa_fws.b00|27a002d0b54085560b38805fb940d6b960707a48
-vendor/firmware/ipa_fws.b01|47a40579c7c15484c654939bebd2bf76c1bb52ab
-vendor/firmware/ipa_fws.b02|d6fe0e71d363af74132569d85e9dc6e5d9cc1800
-vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
-vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
-vendor/firmware/ipa_fws.elf|fd77e3d0d9a12669d1be73a78b3e56391ea9d6e0
-vendor/firmware/ipa_fws.mdt|4e95e63969303caef9d79e5535a61f4fcc06b9f0
-vendor/firmware/ipa_uc.b00|eb39c03229e8aa6b98d85dedddcd6578d7bc8595
-vendor/firmware/ipa_uc.b01|e8aa0b492ddcfbd313e3dc061566619587937da9
-vendor/firmware/ipa_uc.b02|3b10a38f61f127c190649d7cbf8ae508c797e924
-vendor/firmware/ipa_uc.elf|8c21018400501167fadaf8f5a8bc626f39b09e32
-vendor/firmware/ipa_uc.mdt|e2364ef18311d7aba6fc533641da9ffd9b8433ed
 
 # GNSS
 vendor/app/CACertService/CACertService.apk
@@ -654,12 +593,57 @@ vendor/etc/xtwifi.conf
 vendor/etc/flp.conf|8c8642685c225fa0b715c284481018a527dae451
 vendor/etc/gps.conf|6aa19154e9724dfe340b9ce4dd1969129eaac6e5
 
-# Fingerprint - from vayu
-vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME|77ec9978709731a66a7c6355373a07bac24f1af6|da878f3d5af3fe50d1131710a7657c92bdbd0346
-vendor/lib64/hw/fingerprint.goodix.so:vendor/lib64/hw/fingerprint.goodix.default.so;FIX_SONAME|e4fdad0122c939649baa0d80e4c4ea232b5f11c7|4726dd3f6fea4db6e06340e71b6ee40c77fa97c5
-vendor/lib64/libgf_ca.so|ee0da92b23d1875a04fd4b6c330000300375fe07
-vendor/lib64/libgf_hal.so|ab1dd038fe66f7be96f5153d5fa636026141e129
-vendor/lib64/libgoodixhwfingerprint.so|ecf0eac38435e53f014c9ccc11c4be92a3c5e0d1
+# Graphics (Adreno firmware) - from vayu
+vendor/firmware/a612_rgmu.bin|cb8705d5bc417e53863ed16ab0bed2fc1489646f
+vendor/firmware/a618_gmu.bin|0c211ef8a3246d649a4ae52a926d128b61e3c264
+vendor/firmware/a630_gmu.bin|32bb4acc7767c47ddb487ed7cb998d465ee462f2
+vendor/firmware/a630_sqe.fw|6526cbb24d614dd67dc18e3c80d5c4374a0b3f63
+vendor/firmware/a640_gmu.bin|fb1eab0dd5f313abf31441e2209c9398da7df98b
+vendor/firmware/a640_zap.b00|7afc31984d7eeacdd0fc78118ad8fa46c9b3e4ee
+vendor/firmware/a640_zap.b01|bd508a7b91d8fd61beac4ab5238de428abc49742
+vendor/firmware/a640_zap.b02|27d26ca0ae982c065fb7ab58be73bf3ca2e8bdf3
+vendor/firmware/a640_zap.elf|4d0bb927cf20c7bd3a3bdea18194cdda734eba98
+vendor/firmware/a640_zap.mdt|ab295025e138532073b5dda98a02b27c4fe4127f
+
+# Graphics (Adreno)
+vendor/lib/egl/eglSubDriverAndroid.so
+vendor/lib/egl/libEGL_adreno.so;SYMLINK=vendor/lib/libEGL_adreno.so
+vendor/lib/egl/libGLESv1_CM_adreno.so
+vendor/lib/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib/libGLESv2_adreno.so
+vendor/lib/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib/libq3dtools_adreno.so
+vendor/lib/egl/libq3dtools_esx.so
+vendor/lib/libC2D2.so
+vendor/lib/libCB.so
+vendor/lib/libOpenCL.so
+vendor/lib/libVkLayer_q3dtools.so
+vendor/lib/libadreno_app_profiles.so
+vendor/lib/libadreno_utils.so
+vendor/lib/libc2d30_bltlib.so
+vendor/lib/libgpudataproducer.so
+vendor/lib/libgsl.so
+vendor/lib/libllvm-glnext.so
+vendor/lib/libllvm-qcom.so
+vendor/lib64/egl/eglSubDriverAndroid.so
+vendor/lib64/egl/libEGL_adreno.so;SYMLINK=vendor/lib64/libEGL_adreno.so
+vendor/lib64/egl/libGLESv1_CM_adreno.so
+vendor/lib64/egl/libGLESv2_adreno.so;SYMLINK=vendor/lib64/libGLESv2_adreno.so
+vendor/lib64/egl/libq3dtools_adreno.so;SYMLINK=vendor/lib64/libq3dtools_adreno.so
+vendor/lib64/egl/libq3dtools_esx.so
+vendor/lib64/libC2D2.so
+vendor/lib64/libCB.so
+vendor/lib64/libOpenCL.so
+vendor/lib64/libVkLayer_q3dtools.so
+vendor/lib64/libadreno_app_profiles.so
+vendor/lib64/libadreno_utils.so
+vendor/lib64/libc2d30_bltlib.so
+vendor/lib64/libgpudataproducer.so
+vendor/lib64/libgsl.so
+vendor/lib64/libllvm-glnext.so
+vendor/lib64/libllvm-qcom.so
+
+# Graphics (Vulkan)
+vendor/lib/hw/vulkan.adreno.so
+vendor/lib64/hw/vulkan.adreno.so
 
 # HotwordEnrollment
 product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
@@ -724,6 +708,21 @@ vendor/lib64/vendor.qti.ims.rcsconfig@2.0.so
 vendor/lib64/vendor.qti.ims.rcsconfig@2.1.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0-service-Impl.so
 vendor/lib64/vendor.qti.imsrtpservice@3.0.so;MODULE_SUFFIX=_vendor
+
+# IPA firmware - from vayu
+vendor/etc/init/ipa_fws.rc|f1826b81077f51470c97781823f109f12361ac8b
+vendor/firmware/ipa_fws.b00|27a002d0b54085560b38805fb940d6b960707a48
+vendor/firmware/ipa_fws.b01|47a40579c7c15484c654939bebd2bf76c1bb52ab
+vendor/firmware/ipa_fws.b02|d6fe0e71d363af74132569d85e9dc6e5d9cc1800
+vendor/firmware/ipa_fws.b03|c07cfef57f8f694b4cee41e78700614efbedf2bc
+vendor/firmware/ipa_fws.b04|e3552692a635dceca369cab6d9349091b669c80a
+vendor/firmware/ipa_fws.elf|fd77e3d0d9a12669d1be73a78b3e56391ea9d6e0
+vendor/firmware/ipa_fws.mdt|4e95e63969303caef9d79e5535a61f4fcc06b9f0
+vendor/firmware/ipa_uc.b00|eb39c03229e8aa6b98d85dedddcd6578d7bc8595
+vendor/firmware/ipa_uc.b01|e8aa0b492ddcfbd313e3dc061566619587937da9
+vendor/firmware/ipa_uc.b02|3b10a38f61f127c190649d7cbf8ae508c797e924
+vendor/firmware/ipa_uc.elf|8c21018400501167fadaf8f5a8bc626f39b09e32
+vendor/firmware/ipa_uc.mdt|e2364ef18311d7aba6fc533641da9ffd9b8433ed
 
 # IRQ balance
 vendor/bin/msm_irqbalance
@@ -847,8 +846,8 @@ system_ext/etc/permissions/telephony_system-ext_privapp-permissions-qti.xml
 system_ext/framework/qcrilhook.jar
 system_ext/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/app/IWlanService/IWlanService.apk
-vendor/bin/hw/qcrild
 vendor/bin/adpl
+vendor/bin/hw/qcrild
 vendor/bin/ks
 vendor/bin/mdm_helper
 vendor/bin/netmgrd
@@ -920,6 +919,7 @@ vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.1.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_client@1.2.so
 vendor/lib64/vendor.qti.hardware.radio.uim_remote_server@1.0.so
+vendor/radio/qcril_database/qcril.db
 vendor/radio/qcril_database/upgrade/0_initial.sql
 vendor/radio/qcril_database/upgrade/1_version_intro.sql
 vendor/radio/qcril_database/upgrade/2_version_add_wps_config.sql
@@ -928,7 +928,6 @@ vendor/radio/qcril_database/upgrade/4_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/5_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/6_version_update_ecc_table.sql
 vendor/radio/qcril_database/upgrade/7_version_update_ecc_table.sql
-vendor/radio/qcril_database/qcril.db
 
 # Sensors - from vayu
 vendor/bin/hw/vendor.qti.hardware.sensorscalibrate@1.0-service|3ee540b093d238f736b892b3502f645910d8ecd8
@@ -955,6 +954,7 @@ vendor/lib64/sensors.touch.so|1dacf4464b38affca6b681f88258cd91ce9270b5
 vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|356edaf407f0e874cb25814ed3cd91d0fd40ccff
 
 # Sensors configs - from vayu
+vendor/etc/elliptic_sensor.xml|c821cade58e0f10972fc5c81c24044db71e0619a
 vendor/etc/sensors/config/adux1050_0.json|134cb379ad7785958be265cae4c11c3d66a02864
 vendor/etc/sensors/config/ak991x_dri_0.json|c9114a39618658387e2d98b85f698865562db21d
 vendor/etc/sensors/config/lsm6dso_0.json|9abf0d660c89a78d4d5dc5bc8f6140e0775c99fe
@@ -996,7 +996,6 @@ vendor/etc/sensors/config/sns_tilt_sw_disabled.json|1bab92a90c97912dfa9ada603765
 vendor/etc/sensors/config/sns_tilt_sw_enabled.json|e81fdd01d2775ccb265eee89e8e8a83b9e890277
 vendor/etc/sensors/config/sns_tilt_to_wake.json|57a2623d686b19ca0ca51c7c974f3a3901bf4e1e
 vendor/etc/sensors/sns_reg_config|82f1ad688cad61124baae6608cc82d58cf49780e
-vendor/etc/elliptic_sensor.xml|c821cade58e0f10972fc5c81c24044db71e0619a
 
 # Snapdragon Computer Vision Engine
 vendor/lib/libfastcvdsp_stub.so
@@ -1026,11 +1025,6 @@ vendor/lib64/vendor.qti.hardware.soter@1.0.so
 vendor/bin/mi_thermald
 vendor/etc/init/init.mi_thermald.rc
 
-# Thermal engine
-vendor/bin/thermal-engine
-vendor/lib/libthermalclient.so
-vendor/lib64/libthermalclient.so
-
 # Thermal Configs - from vayu_global
 vendor/etc/thermal-arvr.conf|6a4ed4618cd0cf7324ae9e6f7da23f1fcd89afee
 vendor/etc/thermal-camera.conf|18d2bae9302f06081e7eb69752e82cb32a303839
@@ -1042,6 +1036,11 @@ vendor/etc/thermal-normal.conf|e86a79a5f690d72d53767598b3a1e9e3ae6c7fb2
 vendor/etc/thermal-phone.conf|f61907c309bf822eb0c7d5676145ebc804a5df2e
 vendor/etc/thermal-tgame.conf|bcac3570d560b10844c7da65b855a0df04f2e9aa
 vendor/etc/thermald-devices.conf|4c1514c5fcab20e1c2d8367d4afbebb0afddd20d
+
+# Thermal engine
+vendor/bin/thermal-engine
+vendor/lib/libthermalclient.so
+vendor/lib64/libthermalclient.so
 
 # Time services
 vendor/app/TimeService/TimeService.apk
@@ -1086,10 +1085,10 @@ vendor/lib64/vendor.qti.hardware.vpp@1.3.so
 vendor/bin/hw/android.hardware.drm@1.3-service.widevine
 vendor/etc/init/android.hardware.drm@1.3-service.widevine.rc|aa9480824c939db0ece69b0923c7f33b338895e0
 vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml
-vendor/lib64/mediadrm/libwvdrmengine.so|a677ba16d2f8725d91c14ded98787b0608f9f815
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtrustedapploader.so
 vendor/lib64/libwvhidl.so|ee77aa9dc6fcc4842fd55ad7cd32c8284ddcce3d
+vendor/lib64/mediadrm/libwvdrmengine.so|a677ba16d2f8725d91c14ded98787b0608f9f815
 
 # WiFi
 vendor/bin/cnss-daemon
