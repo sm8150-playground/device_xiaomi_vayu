@@ -587,71 +587,45 @@ vendor/firmware/ipa_uc.b02|3b10a38f61f127c190649d7cbf8ae508c797e924
 vendor/firmware/ipa_uc.elf|8c21018400501167fadaf8f5a8bc626f39b09e32
 vendor/firmware/ipa_uc.mdt|e2364ef18311d7aba6fc533641da9ffd9b8433ed
 
-# GNSS
-vendor/app/CACertService/CACertService.apk
-vendor/bin/loc_launcher
-vendor/bin/lowi-server
-vendor/bin/mlid
-vendor/bin/slim_daemon
-vendor/bin/xtra-daemon
-vendor/bin/xtwifi-client
-vendor/bin/xtwifi-inet-agent
-vendor/etc/cacert_location.pem
-vendor/etc/xtra_root_cert.pem
-vendor/lib64/libaoa.so
-vendor/lib64/libcacertclient.so
-vendor/lib64/libdataitems.so
-vendor/lib64/libgdtap.so
-vendor/lib64/libgps.utils.so
-vendor/lib64/libizat_client_api.so
-vendor/lib64/libizat_core.so
-vendor/lib64/libjnihelper.so
-vendor/lib64/liblbs_core.so
-vendor/lib64/libloc_api_v02.so
-vendor/lib64/libloc_core.so
-vendor/lib64/libloc_socket.so
-vendor/lib64/liblocation_api.so
-vendor/lib64/liblocationservice.so
-vendor/lib64/liblocationservice_glue.so
-vendor/lib64/liblowi_client.so
-vendor/lib64/liblowi_wifihal.so
-vendor/lib64/libminksocket.so
-vendor/lib64/libqcc_file_agent.so
-vendor/lib64/libqdma_file_agent.so
-vendor/lib64/libslimclient.so
-vendor/lib64/libxtadapter.so
-vendor/lib64/vendor.qti.gnss@1.0.so
-vendor/lib64/vendor.qti.gnss@1.1.so
-vendor/lib64/vendor.qti.gnss@1.2.so
-vendor/lib64/vendor.qti.gnss@2.0.so
-vendor/lib64/vendor.qti.gnss@2.1.so
-vendor/lib64/vendor.qti.gnss@3.0.so
-vendor/lib64/vendor.qti.gnss@4.0.so
-vendor/lib64/vendor.qti.hardware.cacert@1.0.so
-
-# GNSS - from vayu
-vendor/bin/hw/android.hardware.gnss@2.1-service-qti|17dae0cc696877aa0d3e85c60f035a8e9f208739
-vendor/etc/init/android.hardware.gnss@2.1-service-qti.rc|d3844699c845ce5de4c8b50548a2095f92dd0235
-vendor/etc/vintf/manifest/android.hardware.gnss@2.1-service-qti.xml|1c344aacaa6d17a1585ba58b2e6d438dcfe31fad
+# GNSS - from LA.UM.9.1.r1-12900-SMxxx0.0
+vendor/bin/loc_launcher|be9f321e7c03e038749239ae4accd3db00949e2c
+vendor/bin/lowi-server|d94ebcc5499e0624f941bbf3a7aa259891513cd0
+vendor/bin/slim_daemon|2eef3832875b39a0095b6147334a085f4e3a0697
+vendor/bin/xtra-daemon|36df53948c13655ff5ff5b76882f28f9a4d039a8
 vendor/etc/vintf/manifest/vendor.qti.gnss@4.0-service.xml|6514b13f55abc0acc28e004c35ff93fb972d61a9
-vendor/lib64/hw/android.hardware.gnss@2.1-impl-qti.so|08651a454e375f7a9982662cfe1ffd6b0226d0bf
-vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|3871c4be6f1d57cd11a0da7c44099111771f428d
-vendor/lib64/libbatching.so|b5b112c1ee9d87f3028a1a6c02d04056537a4b6d
-vendor/lib64/libgeofencing.so|1845c7396b57af49760b561539d36101dd91dc0d
-vendor/lib64/libgnss.so|f7cb6060f14b5bf14a094a3d5f59c2a34d6e337f
-vendor/lib64/libgnsspps.so|77c9625bf121b1c35cfc679446336b38900fb8ac
-vendor/lib64/vendor.qti.gnss@4.0-service.so|f97eea8b119fcaa62bb601c324977ef82806503d
+vendor/lib64/hw/vendor.qti.gnss@4.0-impl.so|4f7dc0ed3f65a0d79ffdd94fa2e5ecd2ecbdd21f
+vendor/lib64/libdataitems.so|ac2c6975b584bdf745d09b15aeb3fd3445ab1b71
+vendor/lib64/libgdtap.so|ef93e73de2c5df0f486805e3a2777fd68f12c029
+vendor/lib64/libgnss.so|148e0088e7a7bad8e9e7462978269e5345d5be07
+vendor/lib64/libgps.utils.so|217bda3975df185f095467150605791c59af3805
+vendor/lib64/libizat_client_api.so|5e9998cbcf7d220d5b3080ed1ba352d3656e0ecf
+vendor/lib64/libizat_core.so|cdb3bf89857e2630b49085d33dcae4675d3700d0
+vendor/lib64/liblbs_core.so|15191704136bd0b4258cb46be2c17fd9dec15df2
+vendor/lib64/libloc_api_v02.so|9af95fb5c5d90adda889a31cf78a6bf1ba1c1fc6
+vendor/lib64/libloc_core.so|0d0fde0b6580998fe224ac795a64aeb4f9ceef59
+vendor/lib64/libloc_socket.so|347eebf332c92d52516e70a89bce3211de0f98df
+vendor/lib64/liblocation_api.so|300b197e3c481cc8ac951652415d914478dacce8
+vendor/lib64/liblocationservice.so|3470dd742a7ef53a6733db98aa405eaa2bfc59e0
+vendor/lib64/liblocationservice_glue.so|6b6337abc6caadbd78d19712a0b3e0d18173c6f2
+vendor/lib64/liblowi_client.so|79772b0b4a8c08c22480f3513a2fb4a316143328
+vendor/lib64/liblowi_wifihal.so|d0d187f91e03ebec553545847bcad53fb4f2ee56
+vendor/lib64/libqcc_file_agent.so|cd70ce305d5036a027060aa989b0dcbcfab8edb6
+vendor/lib64/libxtadapter.so|76e5e59ea8b54fd1110564467ec7677f8df6d1ca
+vendor/lib64/vendor.qti.gnss@1.0.so|5cc0d0c8e7a8083f5892eb303ab1e6d4c9d66639
+vendor/lib64/vendor.qti.gnss@1.1.so|9a516f4b1b55798f0ec1ebead0c653ad65546517
+vendor/lib64/vendor.qti.gnss@1.2.so|1266128a166aed91804aebc1513524eb09424f64
+vendor/lib64/vendor.qti.gnss@2.0.so|8dc78f86e141c05f5b404cb3236910896c10d941
+vendor/lib64/vendor.qti.gnss@2.1.so|81142c88b15688a671bd372f013dfb2e77d1998d
+vendor/lib64/vendor.qti.gnss@3.0.so|1c0b41eddcc4789e1ea842be02d511afad123a8e
+vendor/lib64/vendor.qti.gnss@4.0-service.so|d20a0fd214eb4f7aa2d4b2c2cd14ea2b120a49f5
+vendor/lib64/vendor.qti.gnss@4.0.so|e38ae43982dc62bf48193a6c3eb2ae385adb37aa
 
-# GNSS configs
-vendor/etc/apdr.conf
-vendor/etc/izat.conf
-vendor/etc/lowi.conf
-vendor/etc/sap.conf
-vendor/etc/xtwifi.conf
-
-# GNSS configs - from vayu
-vendor/etc/flp.conf|8c8642685c225fa0b715c284481018a527dae451
-vendor/etc/gps.conf|6aa19154e9724dfe340b9ce4dd1969129eaac6e5
+# GNSS configs - from LA.UM.9.1.r1-12900-SMxxx0.0
+vendor/etc/apdr.conf|52c9b4265e55c87ddf07c9b60817b3c09420712a
+vendor/etc/izat.conf|c60fabc264a477e23a36018419271bab2de0a0f6
+vendor/etc/lowi.conf|2045e83483849a124e5fef052b59190f1b784df0
+vendor/etc/sap.conf|b5ea86d9d9ee36dc13194474d343dae36f6fa032
+vendor/etc/xtwifi.conf|ac2189707c0016c31846ccec73e8857d7f566605
 
 # Fingerprint - from vayu
 vendor/lib64/hw/fingerprint.fpc.so:vendor/lib64/hw/fingerprint.fpc.default.so;FIX_SONAME|77ec9978709731a66a7c6355373a07bac24f1af6|da878f3d5af3fe50d1131710a7657c92bdbd0346
