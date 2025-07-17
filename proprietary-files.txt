@@ -637,12 +637,6 @@ vendor/lib64/libgf_ca.so|ee0da92b23d1875a04fd4b6c330000300375fe07
 vendor/lib64/libgf_hal.so|ab1dd038fe66f7be96f5153d5fa636026141e129
 vendor/lib64/libgoodixhwfingerprint.so|ecf0eac38435e53f014c9ccc11c4be92a3c5e0d1
 
-# HotwordEnrollment
-product/priv-app/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND/HotwordEnrollmentOKGoogleHEXAGON_WIDEBAND.apk
-product/priv-app/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND/HotwordEnrollmentXGoogleHEXAGON_WIDEBAND.apk
-system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
-system_ext/framework/com.android.hotwordenrollment.common.util.jar
-
 # IMS
 system_ext/lib64/lib-imsvideocodec.so
 system_ext/lib64/lib-imsvt.so
