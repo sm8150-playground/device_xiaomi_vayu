@@ -749,9 +749,6 @@ vendor/lib64/unnhal-acc-hta.so
 vendor/lib64/unnhal-acc-hvx.so
 
 # NFC - from vayu
-vendor/etc/libnfc-nci.conf|b9536ba10090d460df8a332331225cd279619583
-vendor/etc/libnfc-nxp.conf|de7006d8e7558af82b220a18d85883417f9e7002
-vendor/etc/libnfc-nxp_RF.conf:vendor/libnfc-nxp_RF.conf|d695e6d08b77b06f82be939a6e35a485d4eed357
 vendor/lib/libpn553_fw.so:vendor/lib64/libpn553_fw.so|a8e29cc3ebb2e0df0fb505fc2da9c69a015680fb
 
 # Peripheral manager - from LA.UM.9.1.r1-13700-SMxxx0.QSSI13.0
