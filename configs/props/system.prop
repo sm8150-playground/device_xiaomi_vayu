@@ -24,10 +24,6 @@ persist.vendor.dpm.feature=11
 # Fwk detect
 ro.vendor.qti.va_aosp.support=1
 
-# IOP
-vendor.iop.enable_prefetch_ofr=1
-vendor.iop.enable_uxe=0
-
 # Netflix
 ro.netflix.bsp_rev=Q855-16947-1
 
