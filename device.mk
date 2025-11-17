@@ -236,7 +236,7 @@ PRODUCT_PACKAGES += \
     ApertureOverlayVayu \
     CarrierConfigOverlayVayu \
     FrameworkResOverlayVayu \
-    YAAPSettingsOverlayVayu \
+    LineageSDKOverlayVayu \
     SettingsOverlayVayu \
     DisplayFeaturesVayu \
     SettingsProviderOverlayVayu \
@@ -245,9 +245,6 @@ PRODUCT_PACKAGES += \
     WifiResourcesOverlayVayu
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-
-# Platform
-TARGET_BOARD_PLATFORM := msmnile
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -258,8 +255,6 @@ PRODUCT_PACKAGES += \
     vendor_firmware_mnt_mountpoint
 
 # Power
-TARGET_PROVIDES_POWERHAL := true
-
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
     libqti-perfd-client
