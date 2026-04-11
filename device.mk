@@ -10,9 +10,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-6144-dalvik-heap.mk)
 # Add common definitions for Qualcomm
 $(call inherit-product, hardware/qcom-caf/common/common.mk)
 
-# Blur
-TARGET_ENABLE_BLUR := true
-
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -244,7 +241,8 @@ PRODUCT_PACKAGES += \
     ApertureOverlayVayu \
     CarrierConfigOverlayVayu \
     FrameworkResOverlayVayu \
-    YAAPSettingsOverlayVayu \
+    LineageDialerOverlayVayu \
+    LineageSDKOverlayVayu \
     SettingsOverlayVayu \
     DisplayFeaturesVayu \
     SettingsProviderOverlayVayu \
@@ -253,9 +251,6 @@ PRODUCT_PACKAGES += \
     WifiResourcesOverlayVayu
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-
-# Platform
-TARGET_BOARD_PLATFORM := msmnile
 
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -266,8 +261,6 @@ PRODUCT_PACKAGES += \
     vendor_firmware_mnt_mountpoint
 
 # Power
-TARGET_PROVIDES_POWERHAL := true
-
 PRODUCT_PACKAGES += \
     android.hardware.power-service.lineage-libperfmgr \
     libqti-perfd-client
@@ -335,6 +328,19 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
+
+# Telephony
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # UFFD GC
 PRODUCT_ENABLE_UFFD_GC := true
