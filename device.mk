@@ -190,6 +190,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/permissions/privapp-permissions-hotword.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/privapp-permissions-hotword.xml
 endif
 
+# ION
+$(call soong_config_set_bool,libion,legacy_impl,true)
+
 # Input
 PRODUCT_PACKAGES += \
     sm8150-tavil-snd-card_Button_Jack.kl \
