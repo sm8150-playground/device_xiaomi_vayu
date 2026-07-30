@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="display_features_info">HBM allows to push max brightness limits on panel increases power consumption\nFPS Overlay shows overlay with current frames per second.\nContent Adaptive Brightness Control (CABC) adjusts display and backlight brightness based on currently shown content, to reduce power consumption without degradation.</string>
-</resources>

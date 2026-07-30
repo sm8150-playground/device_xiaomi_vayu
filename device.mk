@@ -142,10 +142,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.memtrack-service
 
-# DisplayFeatures
-PRODUCT_PACKAGES += \
-    DisplayFeatures
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey
@@ -247,7 +243,6 @@ PRODUCT_PACKAGES += \
     LineageDialerOverlayVayu \
     LineageSDKOverlayVayu \
     SettingsOverlayVayu \
-    DisplayFeaturesVayu \
     SettingsProviderOverlayVayu \
     SystemUIOverlayVayu \
     TelephonyOverlayVayu \
