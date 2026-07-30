@@ -156,14 +156,6 @@ on boot
     chmod 0664 /proc/tp_selftest
     chown system system /sys/class/touch/touch_dev/palm_sensor
 
-    # Allow system to manipulate/read FPS, HBM and CABC nodes
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm
-    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/hbm
-    chown system system /sys/devices/platform/soc/soc:qcom,dsi-display-primary/cabc 
-    chmod 0660 /sys/devices/platform/soc/soc:qcom,dsi-display-primary/cabc 
-    chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
-    chmod 0660 /sys/class/drm/sde-crtc-0/measured_fps
-
 #palm_sensor
     chown system system /sys/class/touch/touch_dev/palm_sensor
 
