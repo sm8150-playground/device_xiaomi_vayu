@@ -165,7 +165,6 @@ vendor/lib64/libalLDC.so|94ecf7486ce9ca4c6c26adcadcc12d64b02ead4c|a180219edefcb2
 vendor/lib64/libalhLDC.so|2475eac72173f10f963ce83ea1a32dc4b059fa82|78589350c46771c8da176daf6ab831b1d9366d4c
 vendor/lib64/libarcdualcamsat.so|4a5af9d1ebaa0812cc7632a30256ee81910f358e
 vendor/lib64/libc++_shared.so|8bd494c3b1da5d250e0dc81231ea094fd0bccf88
-vendor/lib64/libcamera_dirty.so|811911480172e89a75c59fa3ad7ec43ef357f1dd
 vendor/lib64/libcamera_nn_stub.so|976251a2a32e75d0c2e397dcce7e5f7e18e4372e
 vendor/lib64/libcamera_scene.so|a4099102c96bd67ad413c9291b10354dad3832aa
 vendor/lib64/libcom.qti.chinodeutils.so|5e162d1fb8633b1885b6737ba9ab4c16c2c5866c
@@ -184,7 +183,6 @@ vendor/lib64/libmialgo_sd.so|472a05437593c2367c345820f18340207ca7c882
 vendor/lib64/libmialgo_utils.so|8d620afa42801d5fefe3deec944eca21c0c10363
 vendor/lib64/libmialgo_video_colourkeeping.so|5adbdc1e59ef44f8763a4f6f90bc1167ad31367b
 vendor/lib64/libmialgo_video_seg.so|336f5dbeda69cfeff5eabc62d9cc6ac7e52cfd2d
-vendor/lib64/libmialgoengine.so|c297c6c07f41ce86f6e461256d9156db28a45f79
 vendor/lib64/libmibokeh_712.so|b43fd723ce688731aaa97ae11869b60ffad1a032
 vendor/lib64/libmibokeh_845_video.so|d85524086698c90c44f28d7de67ee110fae509de
 vendor/lib64/libmibokeh_855.so|66ecedd0416629b3a9f9bc13dd4051dd7f67c0c4
@@ -294,6 +292,18 @@ vendor/lib64/camera/components/com.xiaomi.node.misegment.so|f2dc18f21b8d610752f1
 vendor/lib64/camera/components/libdepthmapwrapper.so|64ddc83b5c962de8f8058760dfeb12afb053e1f8
 
 # Camera configs - from vayu
+vendor/etc/camera/104_Meet.png|6311603a50532eece3f92cce50898a29c1d4995c
+vendor/etc/camera/108_NorthernEurope.png|b6a0847fcf1d87d5db0cae2c9a589b9780e1cbbe
+vendor/etc/camera/109_Rome.png|d5eb2a236ff03ef1a18a06323ed7ea1e10d3216f
+vendor/etc/camera/110_BlackGold.png|bf0b84c9cc417a78f38fa01606160a80d0fda3d2
+vendor/etc/camera/121_BBP.png|471e397956b24ae92d1ba569a93eb909feaa0e18
+vendor/etc/camera/122_Mysterious.png|97aa16bbc50960586807aad5634fa7a86a7527a7
+vendor/etc/camera/123_GreenOrange.png|7ccb8c48068296275ab440129750cddc47e26f4d
+vendor/etc/camera/124_SummerDay.png|e27c1ad14c763cbc0159aa5a0357b934cbc16ced
+vendor/etc/camera/125_Latin.png|eac04636de0aeac2480a3be9d1f0e04f58ddfd0b
+vendor/etc/camera/126_Fantasy.png|0eb52c60f767c4a9b26b22f4ee35ec646545a123
+vendor/etc/camera/127_DustDream.png|ff8d0877d85b556ed5be6648bcc2ef925856beb9
+vendor/etc/camera/128_MongKok.png|b0dbf17da4c971b30ad15c0293c1a43eb087e67c
 vendor/etc/camera/CFR_para_T.bin|28651a0a2f1f3f8e147b01905b33d4a0968dc6b4
 vendor/etc/camera/CFR_para_UW.bin|1345786714986ee323b9d3eaf80ba78a2b96383b
 vendor/etc/camera/CFR_para_W.bin|441760503fafc3d8046d2247051ed16da3961f88
@@ -329,8 +339,9 @@ vendor/etc/camera/seg_quantized.dlc|4ac56cfcef8a42a3e30d222296bd67808a766b05
 vendor/etc/camera/vidhance_calibration|958b1391977b23f340e9b04c2fcf8b6142b81a7f
 vendor/etc/camera/visidon_clearshot_params_algoup.xml|ee064b324f3e4369a2d081b774076d2b71f6246a
 
-# Camera configs - from vayu-user 11 RKQ1.200826.002 V12.0.6.0.RJUMIXM release-keys
-vendor/etc/camera/sr_params.xml|f83901324b80bc1e1af2751e1bb4d95b01977f6e
+# Camera configs - from vayu
+vendor/etc/camera/sr_params.xml|fb9796cde5473fb413d0a4dffe52be4d2ff6804d
+vendor/etc/camera/st_license.lic|2696764c5292a9a2480a129e3a71b9c14d256729
 
 # Camera firmware - from vayu
 vendor/firmware/CAMERA_ICP.elf|60a310efffb18a1100477d80f6e9a9084baca85a

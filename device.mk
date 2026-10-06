@@ -120,6 +120,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/camera_cnf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_cnf.txt
 
+# MIUI camera
+$(call inherit-product, vendor/xiaomi/vayu-camera/vayu-camera.mk)
+
 # Consumer IR
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.xiaomi
