@@ -135,6 +135,16 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-service \
     hwcomposer.qcom
 
+SOONG_CONFIG_NAMESPACES += surfaceflinger
+SOONG_CONFIG_surfaceflinger := \
+    frame_rate_category_min \
+    frame_rate_category_normal \
+    frame_rate_category_high
+
+SOONG_CONFIG_surfaceflinger_frame_rate_category_min := 120
+SOONG_CONFIG_surfaceflinger_frame_rate_category_normal := 60
+SOONG_CONFIG_surfaceflinger_frame_rate_category_high := 90
+
 PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@3.0-impl-qti-display \
     android.hardware.graphics.mapper@4.0-impl-qti-display \
