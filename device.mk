@@ -121,7 +121,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/camera_cnf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_cnf.txt
 
 # MIUI camera
+ifeq ($(TARGET_BUILD_GAPPS),true)
 $(call inherit-product, vendor/xiaomi/vayu-camera/vayu-camera.mk)
+endif
 
 # Consumer IR
 PRODUCT_PACKAGES += \
